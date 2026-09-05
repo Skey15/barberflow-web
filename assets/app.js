@@ -62,7 +62,7 @@ contactForm.addEventListener('submit', (event) => {
   const submitButton = contactForm.querySelector('.contact-submit');
   submitButton.disabled = true;
   submitButton.textContent = 'Enviando...';
-  fetch('[https://barberflow-web-production.up.railway.app/api/contact](https://barberflow-web-production.up.railway.app/api/contact)', {
+  fetch('barberflow-web-production.up.railway.app', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ plan, name, business, phone, email, message })
