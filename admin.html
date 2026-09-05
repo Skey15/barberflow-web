@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberFlow Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/admin.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header>
+        <p class="tag">BARBERFLOW WORKERS</p>
+        <h1>Panel privado de agenda</h1>
+      </header>
+
+      <section class="access">
+        <input id="admin-token" placeholder="Token de acceso" />
+        <button id="save-token">Guardar token</button>
+      </section>
+
+      <section class="filters">
+        <label for="admin-date">Fecha</label>
+        <input type="date" id="admin-date" />
+        <button id="refresh">Actualizar agenda</button>
+      </section>
+
+      <p id="status" class="status"></p>
+      <section id="appointments" class="appointments"></section>
+    </main>
+
+    <script src="/assets/admin.js" defer></script>
+  </body>
+</html>
