@@ -21,6 +21,7 @@ const elements = {
 
 const contactModal = document.getElementById('contact-modal');
 const contactForm = document.getElementById('contact-form');
+const contactApiUrl = 'https://barberflow-web-production.up.railway.app/api/contact';
 
 function openContactModal(plan) {
   document.getElementById('contact-plan').value = plan;
@@ -62,7 +63,7 @@ contactForm.addEventListener('submit', (event) => {
   const submitButton = contactForm.querySelector('.contact-submit');
   submitButton.disabled = true;
   submitButton.textContent = 'Enviando...';
-  fetch('barberflow-web-production.up.railway.app', {
+  fetch(contactApiUrl, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ plan, name, business, phone, email, message })
