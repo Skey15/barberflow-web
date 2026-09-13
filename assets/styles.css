@@ -43,7 +43,7 @@ h1 em { color: var(--orange); font-style: normal; }
 .service-preview-grid b { color: var(--orange); font: .62rem "DM Mono", monospace; }
 .service-preview-grid strong { font-size: .76rem; line-height: 1.2; }
 .service-preview-grid span { align-self: end; color: var(--muted); font: .62rem "DM Mono", monospace; }
-.phone-stage { display: grid; justify-items: center; position: sticky; top: 40px; z-index: 5; width: 100%; min-width: 0; padding-top: 18px; align-self: start; }
+.phone-stage { display: grid; grid-column: 2; grid-row: 1 / span 3; justify-items: center; position: sticky; top: 40px; z-index: 5; width: 100%; min-width: 0; padding-top: 18px; align-self: start; }
 .stage-label { display: flex; align-items: center; gap: 8px; width: 330px; margin-bottom: 14px; color: var(--muted); font: .61rem "DM Mono", monospace; text-transform: uppercase; letter-spacing: .04em; }
 .stage-label span:last-child { margin-left: auto; color: var(--orange); }
 .phone-shadow { position: absolute; bottom: 7px; width: 275px; height: 34px; border-radius: 50%; background: rgba(23,37,34,.2); filter: blur(18px); }
@@ -161,7 +161,7 @@ body.is-scrolling .phone { box-shadow: 14px 22px 0 rgba(211,106,50,.25), 0 36px 
   .pricing-grid { grid-template-columns: 1fr; }
   .setup-banner { align-items: start; }.setup-banner small { margin-left: 0; }.pricing-notes { grid-template-columns: 1fr; }
   .process-list { margin-top: 48px; text-align: left; }
-  .phone-stage { position: relative; left: auto; right: auto; bottom: auto; top: auto; width: calc(100vw - 24px); max-width: calc(100vw - 24px); min-width: 0; padding-top: 0; transform: none; }
+  .phone-stage { grid-column: auto; grid-row: auto; position: relative; left: auto; right: auto; bottom: auto; top: auto; width: calc(100vw - 24px); max-width: calc(100vw - 24px); min-width: 0; padding-top: 0; transform: none; }
   .phone-shadow { width: min(275px, 100%); }
   .stage-label { width: min(390px, 100%); max-width: 100%; }
   .phone { width: calc(100vw - 24px); max-width: calc(100vw - 24px); height: calc((100vw - 24px) * 1.8846); aspect-ratio: auto; }
