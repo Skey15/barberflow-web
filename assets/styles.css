@@ -137,6 +137,10 @@ h1 em { color: var(--orange); font-style: normal; }
 .stage-footer { display: flex; justify-content: space-between; gap: 32px; width: min(430px, 100%); margin: 26px 0 0; padding: 0 10px; color: var(--muted); font: .6rem "DM Mono", monospace; text-transform: uppercase; letter-spacing: .06em; }
 body.is-scrolling .phone { box-shadow: 14px 22px 0 rgba(211,106,50,.25), 0 36px 85px rgba(23,37,34,.36); }
 
+@media (min-width: 821px) {
+  .phone { width: min(390px, calc((100vh - 150px) * .53)); height: min(735px, calc(100vh - 150px)); }
+}
+
 @media (max-width: 820px) {
   .demo-page { width: min(560px, calc(100% - 24px)); grid-template-columns: minmax(0, 1fr); gap: 48px; padding: 34px 0 50px; }
   .brand { margin-bottom: 48px; }
