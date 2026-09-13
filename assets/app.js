@@ -21,8 +21,7 @@ const elements = {
 
 const contactModal = document.getElementById('contact-modal');
 const contactForm = document.getElementById('contact-form');
-const contactApiUrl = 'https://barberflow-web-production.up.railway.app/api/contact';
-
+const contactApiUrl = 'https://barberflow-api-production-942e.up.railway.app/api/contact';
 function openContactModal(plan) {
   document.getElementById('contact-plan').value = plan;
   const descriptions = {
